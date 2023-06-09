@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-1: #171100;
+    --primary-color-2: #ffb900;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: orange; */
+}
+
+.btn-black {
+    display: inline-block;
+    min-width: 118px;
+    padding: 12px 24px;
+    background: var(--primary-color-1);
+    border-radius: 25px;
+}
+
+.btn-yellow {
+    display: inline-block;
+    min-width: 137px;
+    padding: 11px 37px;
+    border-radius: 26px;
+    background: var(--primary-color-2);
+}
+
+/*================= Fix-header ===================== */
+.fix-header {
+    background: #fffcf4;
+    /* background: #3333; */
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+}
+
+.fix-header .navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 8px;
+}
+
+.fix-header .navbar ul {
+    display: flex;
+    margin-left: auto;
+}
+
+.fix-header .navbar ul li a {
+    display: inline-block;
+    padding: 0 21px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #5f5b53;
+    border-radius: 5px;
+}
+
+.fix-header .navbar ul li a:hover,
+.navbar .active {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.fix-header .navbar ul li .active::before {
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 1px;
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+}
+
+.fix-header .navbar .action a {
+    margin-left: 49px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+}
+
+.fix-header .navbar .action .btn-black {
+    padding: 11px 41px;
+}
+.navbar .btn-black:hover {
+    opacity: 0.9;
+}
+/*================= Hero ===================== */
+.hero {
+    background: #fffcf4;
+}
+.hero-body {
+    padding-top: 64px;
+    display: flex;
+    /* background-color: orange; */
+}
+
+.hero .img-hero {
+    display: inline-block;
+    position: relative;
+    width: 570px;
+    height: 685px;
+    /* background-color: #333; */
+}
+
+.hero .img-hero > img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero .img-hero .qty {
+    position: absolute;
+    padding: 24px 58px 24px 24px;
+    bottom: 48px;
+    right: 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.hero .qty .row {
+    display: flex;
+    align-items: center;
+}
+
+.hero .qty .row:nth-child(2) {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.hero .qty .row .row-1 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 26px;
+    /* identical to box height, or 186% */
+    color: #5f5b53;
+}
+
+.hero .qty .row .row-2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    color: #171100;
+}
+
+.hero .qty .row > div {
+    margin-left: 16px;
+}
+
+.hero .info {
+    margin-left: auto;
+    margin-top: 64px;
+    width: 470px;
+}
+
+.hero .info .title {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.hero .info .desc {
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.hero .info .action {
+    position: relative;
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .info .action .btn-yellow {
+    padding: 17px 33px;
+    border-radius: 32px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.67;
+    color: #ffffff;
+}
+
+.hero .info .action .watch {
+    margin-left: 28px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+
+    color: #171100;
+}
+
+.hero .info .action .icon {
+    display: flex;
+    margin-right: 14px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero .info .desc-2 {
+    margin-top: 48px;
+}
+
+.hero .info .data {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #5f5b53;
+}
+
+.hero .info .data strong {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.4rem;
+    color: #171100;
+}
+
+.hero .info .data span {
+    margin-left: 10px;
+}
+
+.hero .info .data span:first-of-type {
+    margin: 0 20px 0 10px;
+}
